@@ -1,0 +1,7 @@
+f = open("post.txt", "w")
+f.close()
+print("Welcome! This will post the text in post.txt every time post.py is run.")
+text = input("What do you want to post?")
+f = open("post.txt", "a")
+f.write(text)
+f.close()
