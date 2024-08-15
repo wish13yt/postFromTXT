@@ -1,0 +1,12 @@
+from atproto import Client
+print("Welcome! Make sure you run main.py to make the txt first. If you have already done that, continue.")
+f = open("post.txt", "r")
+postme = f.read()
+f.close()
+print("File read!")
+user = input("What's your Bluesky username?")
+appw = input("What's an app password on your account?")
+client = Client(base_url='https://bsky.social')
+client.login(user, appw)
+post = client.send_post(postme)
+print("Post sent! Delete the app password if this is the only thing using it.")
