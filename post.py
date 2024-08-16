@@ -1,5 +1,5 @@
 from atproto import Client
-print("Welcome! Make sure you run main.py to make the txt first. If you have already done that, continue.")
+print("Welcome! Make sure you run txtmaker.py to make the txt first. If you have already done that, continue.")
 f = open("post.txt", "r")
 postme = f.read()
 f.close()
